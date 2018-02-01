@@ -1,0 +1,47 @@
+{
+  "uid" : "3a28760f2ac1e3bc",
+  "name" : "newYandexTestOne",
+  "title" : "New yandex test one",
+  "time" : {
+    "start" : 1517509767681,
+    "stop" : 1517509784227,
+    "duration" : 16546
+  },
+  "summary" : {
+    "attachments" : 0,
+    "steps" : 0
+  },
+  "failure" : null,
+  "description" : null,
+  "severity" : "NORMAL",
+  "status" : "PASSED",
+  "suite" : {
+    "uid" : "4abad8eff2888519",
+    "name" : "MyRefactoringYandexTest",
+    "title" : "My refactoring yandex test"
+  },
+  "steps" : [ ],
+  "attachments" : [ ],
+  "issues" : [ ],
+  "testIds" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "JUnit"
+  }, {
+    "name" : "language",
+    "value" : "JAVA"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-DLBNCAD"
+  }, {
+    "name" : "suite-name",
+    "value" : "MyRefactoringYandexTest"
+  }, {
+    "name" : "suite-title",
+    "value" : null
+  }, {
+    "name" : "thread",
+    "value" : "9376@DESKTOP-DLBNCAD.main(1)"
+  } ],
+  "parameters" : [ ]
+}

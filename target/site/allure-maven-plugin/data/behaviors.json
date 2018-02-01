@@ -1,0 +1,92 @@
+{
+  "features" : [ {
+    "title" : "Without feature",
+    "statistic" : {
+      "total" : 6,
+      "passed" : 6,
+      "pending" : 0,
+      "canceled" : 0,
+      "failed" : 0,
+      "broken" : 0
+    },
+    "stories" : [ {
+      "uid" : "3c8450c22fcd8a5b",
+      "title" : "Without story",
+      "statistic" : {
+        "total" : 6,
+        "passed" : 6,
+        "pending" : 0,
+        "canceled" : 0,
+        "failed" : 0,
+        "broken" : 0
+      },
+      "testCases" : [ {
+        "uid" : "f295252706cdc2ca",
+        "name" : "yandextTestOne",
+        "title" : "Yandext test one",
+        "time" : {
+          "start" : 1517509829292,
+          "stop" : 1517509849175,
+          "duration" : 19883
+        },
+        "severity" : "NORMAL",
+        "status" : "PASSED"
+      }, {
+        "uid" : "a5a7dad3a47ec150",
+        "name" : "yandextTestTwo",
+        "title" : "Yandext test two",
+        "time" : {
+          "start" : 1517509849175,
+          "stop" : 1517509870994,
+          "duration" : 21819
+        },
+        "severity" : "NORMAL",
+        "status" : "PASSED"
+      }, {
+        "uid" : "3a28760f2ac1e3bc",
+        "name" : "newYandexTestOne",
+        "title" : "New yandex test one",
+        "time" : {
+          "start" : 1517509767681,
+          "stop" : 1517509784227,
+          "duration" : 16546
+        },
+        "severity" : "NORMAL",
+        "status" : "PASSED"
+      }, {
+        "uid" : "6dc6414fb9e2d88b",
+        "name" : "newYandexTestTwo",
+        "title" : "New yandex test two",
+        "time" : {
+          "start" : 1517509784246,
+          "stop" : 1517509797333,
+          "duration" : 13087
+        },
+        "severity" : "NORMAL",
+        "status" : "PASSED"
+      }, {
+        "uid" : "bc752e4cd1d95e87",
+        "name" : "testYandexTestOne",
+        "title" : "Яндекс Маркет 1ый сценарий",
+        "time" : {
+          "start" : 1517509801183,
+          "stop" : 1517509816477,
+          "duration" : 15294
+        },
+        "severity" : "NORMAL",
+        "status" : "PASSED"
+      }, {
+        "uid" : "3d84e8aa6d22dda4",
+        "name" : "testYandexTestTwo",
+        "title" : "Яндекс Маркет 2ой сценарий",
+        "time" : {
+          "start" : 1517509816477,
+          "stop" : 1517509828472,
+          "duration" : 11995
+        },
+        "severity" : "NORMAL",
+        "status" : "PASSED"
+      } ]
+    } ]
+  } ]
+}
