@@ -1,9 +1,15 @@
 package pages;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.Wait;
+import org.openqa.selenium.support.ui.WebDriverWait;
+
+import static org.junit.Assert.assertEquals;
 
 public class MarketPage extends BasePage {
 
@@ -68,4 +74,24 @@ public class MarketPage extends BasePage {
         }
     }
 
+    public void checkCountOfElementHeadphone () {
+        Wait<WebDriver> wait = new WebDriverWait(driver, 5, 1000);
+        wait.until( ExpectedConditions.visibilityOf(
+                driver.findElement( By.xpath("(//DIV[@class='n-snippet-cell2__title'])"))));
+        assertEquals( 12, driver.findElements( By.xpath( "(//DIV[@class='n-snippet-cell2__title'])" ) ).size() );
+
+    }
+
+    public void waitToclickButtonSearch(){
+        Wait<WebDriver> wait = new WebDriverWait(driver, 5, 1000);
+        wait.until( ExpectedConditions.elementToBeClickable(
+                driver.findElement(By.xpath("(//BUTTON[@role='button'])[1]"))));
+    }
+
+    public void checkCountOfElementOfTV () {
+        Wait<WebDriver> wait = new WebDriverWait( driver, 5, 1000 );
+        wait.until( ExpectedConditions.visibilityOf(
+                driver.findElement( By.xpath( "(//div[@class='n-snippet-card2__title'])" ) ) ) );
+        assertEquals( 12, driver.findElements( By.xpath( "(//div[@class='n-snippet-card2__title'])" ) ).size() );
+    }
 }

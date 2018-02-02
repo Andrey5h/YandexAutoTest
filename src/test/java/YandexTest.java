@@ -5,17 +5,18 @@
 
 
 import java.util.concurrent.TimeUnit;
-
 import org.junit.*;
-
 import static org.junit.Assert.assertEquals;
-
 import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.Wait;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 
 public class YandexTest {
     private WebDriver driver;
+    private Wait<WebDriver> wait;
 
 
     @Before
@@ -29,7 +30,7 @@ public class YandexTest {
         driver.manage().window().maximize();
         driver.findElement( By.xpath( "//A[@class='home-link home-link_blue_yes home-tabs__link home-tabs__search'][text()='Маркет']" ) ).click();
         driver.findElement( By.xpath( "//A[@class='link topmenu__link'][text()='Электроника']" ) ).click();
-
+        wait =  new WebDriverWait(driver, 5, 1000);
     }
 
 
@@ -46,7 +47,10 @@ public class YandexTest {
 
         String a = driver.findElement( By.xpath( "(//div[@class='n-snippet-card2__title'])[1]" ) ).getText();
         driver.findElement( By.xpath( "//INPUT[@id='header-search']" ) ).sendKeys( a );
-        Thread.sleep( 1000 );
+
+        wait.until( ExpectedConditions.elementToBeClickable(
+                driver.findElement(By.xpath("(//BUTTON[@role='button'])[1]"))));
+
         driver.findElement( By.xpath( "(//BUTTON[@role='button'])[1]" ) ).click();
         Assert.assertTrue( driver.findElement( By.xpath( "//H1[@class='title title_size_28 title_bold_yes']" ) ).getText().contains( a ) );
     }
@@ -57,15 +61,18 @@ public class YandexTest {
 
         driver.findElement( By.xpath( " (//A[@class='link catalog-menu__list-item metrika i-bem metrika_js_inited'][text()='Наушники и Bluetooth-гарнитуры'])[2]" ) ).click();
         driver.findElement( By.xpath( "//INPUT[@id='glf-pricefrom-var']" ) ).sendKeys( "5000" );
-        Thread.sleep( 1000 );
         driver.findElement( By.xpath( "//LABEL[@class='checkbox__label'][text()='Beats']" ) ).click();
-        Thread.sleep( 1000 );
+
         driver.findElement( By.xpath( "//button[@class='button button_action_n-filter-apply button_size_s button_pseudo_yes button_theme_pseudo i-bem button_js_inited']" ) ).click();
+
+        wait.until(ExpectedConditions.visibilityOf(
+                driver.findElement(By.xpath("(//DIV[@class='n-snippet-cell2__title'])"))));
         assertEquals( 12, driver.findElements( By.xpath( "(//DIV[@class='n-snippet-cell2__title'])" ) ).size() );
-        Thread.sleep( 1000 );
+        Thread.sleep( 2000 );
         String g = driver.findElement( By.xpath( "(//DIV[@class='n-snippet-cell2__title'])[1]" ) ).getText();
         driver.findElement( By.xpath( "//INPUT[@id='header-search']" ) ).sendKeys( g );
-        Thread.sleep( 1000 );
+        wait.until( ExpectedConditions.elementToBeClickable(
+                driver.findElement(By.xpath("(//BUTTON[@role='button'])[1]"))));
         driver.findElement( By.xpath( "(//BUTTON[@role='button'])[1]" ) ).click();
         Assert.assertTrue( driver.findElement( By.xpath( "//LI[@class='n-breadcrumbs__item n-breadcrumbs__item_type_text']" ) ).getText().contains( g ) );
 

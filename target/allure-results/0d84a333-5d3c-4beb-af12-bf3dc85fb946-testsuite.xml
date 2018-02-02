@@ -1,23 +1,23 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<ns2:test-suite start="1517509767670" stop="1517509871103" version="1.5.2" xmlns:ns2="urn:model.allure.qatools.yandex.ru">
-    <name>MyRefactoringYandexTest</name>
+<ns2:test-suite start="1517597561332" stop="1517597601739" version="1.5.2" xmlns:ns2="urn:model.allure.qatools.yandex.ru">
+    <name>YandexTest</name>
     <test-cases>
-        <test-case start="1517509767681" stop="1517509784227" status="passed">
-            <name>newYandexTestOne</name>
+        <test-case start="1517597561332" stop="1517597581301" status="passed">
+            <name>yandextTestOne</name>
             <steps/>
             <attachments/>
             <labels>
                 <label name="host" value="DESKTOP-DLBNCAD"/>
-                <label name="thread" value="9376@DESKTOP-DLBNCAD.main(1)"/>
+                <label name="thread" value="9276@DESKTOP-DLBNCAD.main(1)"/>
             </labels>
         </test-case>
-        <test-case start="1517509784246" stop="1517509797333" status="passed">
-            <name>newYandexTestTwo</name>
+        <test-case start="1517597581302" stop="1517597601739" status="passed">
+            <name>yandextTestTwo</name>
             <steps/>
             <attachments/>
             <labels>
                 <label name="host" value="DESKTOP-DLBNCAD"/>
-                <label name="thread" value="9376@DESKTOP-DLBNCAD.main(1)"/>
+                <label name="thread" value="9276@DESKTOP-DLBNCAD.main(1)"/>
             </labels>
         </test-case>
     </test-cases>

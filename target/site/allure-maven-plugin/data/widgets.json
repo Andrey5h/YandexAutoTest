@@ -11,9 +11,9 @@
         "broken" : 0
       },
       "time" : {
-        "start" : 1517509767681,
-        "stop" : 1517509870994,
-        "duration" : 103313
+        "start" : 1517597507312,
+        "stop" : 1517597601739,
+        "duration" : 94427
       }
     },
     "defects" : {
@@ -23,7 +23,7 @@
     "xunit" : {
       "totalCount" : 3,
       "items" : [ {
-        "uid" : "4abad8eff2888519",
+        "uid" : "96563f1481bbb43e",
         "title" : "My refactoring yandex test",
         "statistic" : {
           "total" : 2,
@@ -34,7 +34,7 @@
           "broken" : 0
         }
       }, {
-        "uid" : "20e4661bdf81119e",
+        "uid" : "f7c2dd9abb13222b",
         "title" : "Yandex allure report test",
         "statistic" : {
           "total" : 2,
@@ -45,7 +45,7 @@
           "broken" : 0
         }
       }, {
-        "uid" : "41ff0cf00ecf1e81",
+        "uid" : "e6ab16d3d6a2d5bb",
         "title" : "Yandex test",
         "statistic" : {
           "total" : 2,

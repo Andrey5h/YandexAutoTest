@@ -1,17 +1,17 @@
 {
   "time" : {
-    "start" : 1517509767681,
-    "stop" : 1517509870994,
-    "duration" : 103313
+    "start" : 1517597507312,
+    "stop" : 1517597601739,
+    "duration" : 94427
   },
   "testSuites" : [ {
-    "uid" : "41ff0cf00ecf1e81",
+    "uid" : "e6ab16d3d6a2d5bb",
     "name" : "YandexTest",
     "title" : "Yandex test",
     "time" : {
-      "start" : 1517509829292,
-      "stop" : 1517509870994,
-      "duration" : 41702
+      "start" : 1517597561332,
+      "stop" : 1517597601739,
+      "duration" : 40407
     },
     "statistic" : {
       "total" : 2,
@@ -23,77 +23,36 @@
     },
     "description" : null,
     "testCases" : [ {
-      "uid" : "f295252706cdc2ca",
+      "uid" : "89e28da34b474913",
       "name" : "yandextTestOne",
       "title" : "Yandext test one",
       "time" : {
-        "start" : 1517509829292,
-        "stop" : 1517509849175,
-        "duration" : 19883
+        "start" : 1517597561332,
+        "stop" : 1517597581301,
+        "duration" : 19969
       },
       "severity" : "NORMAL",
       "status" : "PASSED"
     }, {
-      "uid" : "a5a7dad3a47ec150",
+      "uid" : "69e389571fbf5b57",
       "name" : "yandextTestTwo",
       "title" : "Yandext test two",
       "time" : {
-        "start" : 1517509849175,
-        "stop" : 1517509870994,
-        "duration" : 21819
+        "start" : 1517597581302,
+        "stop" : 1517597601739,
+        "duration" : 20437
       },
       "severity" : "NORMAL",
       "status" : "PASSED"
     } ]
   }, {
-    "uid" : "4abad8eff2888519",
-    "name" : "MyRefactoringYandexTest",
-    "title" : "My refactoring yandex test",
-    "time" : {
-      "start" : 1517509767681,
-      "stop" : 1517509797333,
-      "duration" : 29652
-    },
-    "statistic" : {
-      "total" : 2,
-      "passed" : 2,
-      "pending" : 0,
-      "canceled" : 0,
-      "failed" : 0,
-      "broken" : 0
-    },
-    "description" : null,
-    "testCases" : [ {
-      "uid" : "3a28760f2ac1e3bc",
-      "name" : "newYandexTestOne",
-      "title" : "New yandex test one",
-      "time" : {
-        "start" : 1517509767681,
-        "stop" : 1517509784227,
-        "duration" : 16546
-      },
-      "severity" : "NORMAL",
-      "status" : "PASSED"
-    }, {
-      "uid" : "6dc6414fb9e2d88b",
-      "name" : "newYandexTestTwo",
-      "title" : "New yandex test two",
-      "time" : {
-        "start" : 1517509784246,
-        "stop" : 1517509797333,
-        "duration" : 13087
-      },
-      "severity" : "NORMAL",
-      "status" : "PASSED"
-    } ]
-  }, {
-    "uid" : "20e4661bdf81119e",
+    "uid" : "f7c2dd9abb13222b",
     "name" : "YandexAllureReportTest",
     "title" : "Yandex allure report test",
     "time" : {
-      "start" : 1517509801183,
-      "stop" : 1517509828472,
-      "duration" : 27289
+      "start" : 1517597536763,
+      "stop" : 1517597560500,
+      "duration" : 23737
     },
     "statistic" : {
       "total" : 2,
@@ -105,24 +64,65 @@
     },
     "description" : null,
     "testCases" : [ {
-      "uid" : "bc752e4cd1d95e87",
+      "uid" : "13f58e95eb0b961b",
       "name" : "testYandexTestOne",
       "title" : "Яндекс Маркет 1ый сценарий",
       "time" : {
-        "start" : 1517509801183,
-        "stop" : 1517509816477,
-        "duration" : 15294
+        "start" : 1517597536763,
+        "stop" : 1517597549889,
+        "duration" : 13126
       },
       "severity" : "NORMAL",
       "status" : "PASSED"
     }, {
-      "uid" : "3d84e8aa6d22dda4",
+      "uid" : "21ed5106afadac32",
       "name" : "testYandexTestTwo",
       "title" : "Яндекс Маркет 2ой сценарий",
       "time" : {
-        "start" : 1517509816477,
-        "stop" : 1517509828472,
-        "duration" : 11995
+        "start" : 1517597549890,
+        "stop" : 1517597560500,
+        "duration" : 10610
+      },
+      "severity" : "NORMAL",
+      "status" : "PASSED"
+    } ]
+  }, {
+    "uid" : "96563f1481bbb43e",
+    "name" : "MyRefactoringYandexTest",
+    "title" : "My refactoring yandex test",
+    "time" : {
+      "start" : 1517597507312,
+      "stop" : 1517597532241,
+      "duration" : 24929
+    },
+    "statistic" : {
+      "total" : 2,
+      "passed" : 2,
+      "pending" : 0,
+      "canceled" : 0,
+      "failed" : 0,
+      "broken" : 0
+    },
+    "description" : null,
+    "testCases" : [ {
+      "uid" : "a8183c32878786da",
+      "name" : "newYandexTestOne",
+      "title" : "New yandex test one",
+      "time" : {
+        "start" : 1517597507312,
+        "stop" : 1517597522218,
+        "duration" : 14906
+      },
+      "severity" : "NORMAL",
+      "status" : "PASSED"
+    }, {
+      "uid" : "349b45efc462e44b",
+      "name" : "newYandexTestTwo",
+      "title" : "New yandex test two",
+      "time" : {
+        "start" : 1517597522237,
+        "stop" : 1517597532241,
+        "duration" : 10004
       },
       "severity" : "NORMAL",
       "status" : "PASSED"

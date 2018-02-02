@@ -9,12 +9,10 @@ import ru.yandex.qatools.allure.annotations.Title;
 import steps.BaseSteps;
 import steps.MainSteps;
 import steps.MarketSteps;
-
 import java.util.HashMap;
 
 
 public class YandexAllureReportTest extends BaseSteps {
-
 
     @Test
     @Title("Яндекс Маркет 1ый сценарий")
@@ -38,11 +36,9 @@ public class YandexAllureReportTest extends BaseSteps {
         marketSteps.stepCheckCountOfEliments();
         String d = marketSteps.stepFoundFirstEliment();
         marketSteps.stepInputFirstElimentToSearch(d);
-        Thread.sleep( 1000 );
         marketSteps.stepClickToSearch();
         marketSteps.stepCheckText(d);
     }
-
 
     @Test
     @Title("Яндекс Маркет 2ой сценарий")
@@ -61,15 +57,12 @@ public class YandexAllureReportTest extends BaseSteps {
         marketSteps.stepFillFields(testDate);
 
         marketSteps.stepClickBeats();
-        Thread.sleep( 1000 );
+        marketSteps.stepButtonPrimenit();
         marketSteps.stepCheckCountOfHeadphonesEliments();
-        Thread.sleep( 1000 );
+        Thread.sleep( 2000 );
         String z = marketSteps.stepFoundFirstHeadphonesEliment();
-        Thread.sleep( 1000 );
         marketSteps.stepInputFirstElimentOfHeadphonesToSearch(z);
-        Thread.sleep( 1000 );
         marketSteps.stepClickToSearch();
-        Thread.sleep( 1000 );
         marketSteps.stepCheckTextOfHeadphones( z );
     }
 }

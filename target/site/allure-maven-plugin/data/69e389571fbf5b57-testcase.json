@@ -1,11 +1,11 @@
 {
-  "uid" : "a5a7dad3a47ec150",
+  "uid" : "69e389571fbf5b57",
   "name" : "yandextTestTwo",
   "title" : "Yandext test two",
   "time" : {
-    "start" : 1517509849175,
-    "stop" : 1517509870994,
-    "duration" : 21819
+    "start" : 1517597581302,
+    "stop" : 1517597601739,
+    "duration" : 20437
   },
   "summary" : {
     "attachments" : 0,
@@ -16,7 +16,7 @@
   "severity" : "NORMAL",
   "status" : "PASSED",
   "suite" : {
-    "uid" : "41ff0cf00ecf1e81",
+    "uid" : "e6ab16d3d6a2d5bb",
     "name" : "YandexTest",
     "title" : "Yandex test"
   },
@@ -31,6 +31,9 @@
     "name" : "language",
     "value" : "JAVA"
   }, {
+    "name" : "thread",
+    "value" : "9276@DESKTOP-DLBNCAD.main(1)"
+  }, {
     "name" : "host",
     "value" : "DESKTOP-DLBNCAD"
   }, {
@@ -39,9 +42,6 @@
   }, {
     "name" : "suite-name",
     "value" : "YandexTest"
-  }, {
-    "name" : "thread",
-    "value" : "9376@DESKTOP-DLBNCAD.main(1)"
   } ],
   "parameters" : [ ]
 }
